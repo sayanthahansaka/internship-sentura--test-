@@ -32,7 +32,7 @@ public class UserService {
         user.setPicture(userDto.getPicture());
         user.setDirectory(userDto.getDirectory());
         user.setMetadata(userDto.getMetadata());
-        user.setTags(userDto.getTags());
+       
         user.setSuspended(userDto.isSuspended());
         user.setRoles(userDto.getRoles());
 

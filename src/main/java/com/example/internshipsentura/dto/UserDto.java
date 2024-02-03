@@ -1,8 +1,8 @@
 package com.example.internshipsentura.dto;
 
 import lombok.Data;
+
 import java.util.List;
-import java.util.Map;
 
 @Data
 public class UserDto {
@@ -17,9 +17,11 @@ public class UserDto {
     private String comment;
     private String picture;
     private String directory;
-    private String  metadata; //Map<String, Object>
+    private String metadata; // Keep it as a String
     private List<String> tags;
     private boolean isSuspended;
 
-
+    public String getRoles() {
+        return null;
+    }
 }

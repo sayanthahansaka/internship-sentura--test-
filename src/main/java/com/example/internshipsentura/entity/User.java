@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 @Entity
@@ -35,6 +34,7 @@ public class User {
     private String picture;
     private String directory;
 
+    @Column(columnDefinition = "TEXT") // Use TEXT type for large strings like JSON
     private String metadata;
 
     @ElementCollection
@@ -43,7 +43,7 @@ public class User {
     private Set<String> tags = new HashSet<>();
 
     private boolean isSuspended;
+
+    @Column(columnDefinition = "TEXT")
     private String roles;
-
-
 }
